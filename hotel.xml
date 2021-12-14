@@ -14,7 +14,7 @@
 	<scriptfile>script.php</scriptfile>
 
 	<updateservers>
-		<server type="extension" priority="2" name="My Extension's Updates">https://github.com/kipoxD/com/blob/main/hotel.xml</server>
+		<server type="extension" priority="2" name="My Extension's Updates">https://github.com/kipoxD/com/main/hotel.xml</server>
 	 </updateservers>
 
 	<updates>
