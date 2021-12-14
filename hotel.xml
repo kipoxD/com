@@ -1,124 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="3.0" method="upgrade">
-
-	<name>COM_HOTEL</name>
-	<creationDate>October 2021</creationDate>
-	<author>Kristian Kykynezhdy</author>
-	<authorEmail>kristian.kykynezhdy@student.tuke.sk</authorEmail>
-	<authorUrl>http://www.example.org</authorUrl>
-	<copyright>Copyright Info</copyright>
-	<license>License Info</license>
-	<version>0.0.18</version>
-	<description>COM_HOTEL_DESCRIPTION</description>
-
-	<scriptfile>script.php</scriptfile>
-
-	<updateservers>
-		<server type="extension" priority="2" name="My Extension's Updates">https://github.com/kipoxD/com/main/hotel.xml</server>
-	 </updateservers>
-
-	<updates>
-		<update>
-			<name>Joomla! 4.0.5</name>
-			<description>Joomla! 4.0.5 CMS</description>
-			<element>joomla</element>
-			<type>file</type>
-			<version>4.0.5</version>
-			<infourl title="Joomla!">http://www.joomla.org/</infourl>
-			<downloads>
-				<downloadurl type="full" format="zip">https://downloads.joomla.org/sk/cms/joomla4/4-0-5/Joomla_4-0-5-Stable-Update_Package.zip?format=zip</downloadurl>
-			</downloads>
-			<tags>
-				<tag>stable</tag>
-			</tags>
-			<maintainer>Kristian Kykynezhdy</maintainer>
-			<section>Testing</section>
-			<targetplatform name="joomla" version="3.10.4."/>
-
-			<schemas>
-				<schemapath type="mysql">sql/updates/mysql</schemapath>
-			</schemas>
-		</update>
-	</updates>
-
-	<install>
-		<sql>
-			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
-		</sql>
-	</install>
-	<uninstall>
-		<sql>
-			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
-		</sql>
-	</uninstall>
-	<update>
-		
-	</update>
-
-
-	<files folder="site">
-		<filename>index.html</filename>
-		<folder>controllers</folder>
-		<filename>hotel.php</filename>
-		<filename>controller.php</filename>
-		<folder>views</folder>
-		<folder>models</folder>
-	</files>
-
-	<languages folder="site/language">
-		<language tag="en-GB">en-GB/en-GB.com_hotel.ini</language>
-	</languages>
-
-	<media destination="com_hotel" folder="media">
-		<filename>index.html</filename>
-		<folder>images</folder>
-		<folder>js</folder>
-		<folder>css</folder>
-	</media>
-
-	<administration>
-		<menu link='index.php?option=com_hotel'>COM_HOTEL_MENU</menu>
-		<submenu>
-			<!--
-				Note that all & must be escaped to &amp; for the file to be valid
-				XML and be parsed by the installer
-			-->
-			<menu
-				link="option=com_hotel"
-				view="hotel"
-				img="class:hotels"
-				alt="Hotel!/Hotels"
-				>
-				COM_HOTEL_SUBMENU_HOTELS
-			</menu>
-			<menu
-				link="option=com_categories&amp;view=categories&amp;extension=com_hotel"
-				view="categories"
-				img="class:hotels-cat"
-				alt="Hotel!/Categories"
-				>
-				COM_HOTEL_SUBMENU_CATEGORIES
-			</menu>
-		</submenu>
-		<files folder="admin">
-			<filename>index.html</filename>
-			<filename>config.xml</filename>
-			<filename>hotel.php</filename>
-			<filename>controller.php</filename>
-			<filename>access.xml</filename>
-			<folder>sql</folder>
-			<folder>tables</folder>
-			<folder>models</folder>
-			<folder>views</folder>
-			<folder>controllers</folder>
-			<folder>helpers</folder>
-		</files>
-
-		<languages folder="admin/language">
-			<language tag="en-GB">en-GB/en-GB.com_hotel.ini</language>
-			<language tag="en-GB">en-GB/en-GB.com_hotel.sys.ini</language>
-		</languages>
-
-	</administration>
-
-</extension>
+<update>
+	<name>Joomla! 4.0.5</name>
+	<description>Joomla! 4.0.5 CMS</description>
+	<element>joomla</element>
+	<type>file</type>
+	<version>4.0.5</version>
+	<infourl title="Joomla!">http://www.joomla.org/</infourl>
+	<downloads>
+		<downloadurl type="full" format="zip">https://downloads.joomla.org/sk/cms/joomla4/4-0-5/Joomla_4-0-5-Stable-Update_Package.zip?format=zip</downloadurl>
+	</downloads>
+	<tags>
+		<tag>stable</tag>
+	</tags>
+	<maintainer>Kristian Kykynezhdy</maintainer>
+	<section>Testing</section>
+	<targetplatform name="joomla" version="3.10.4."/>
+ </update>
